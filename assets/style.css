@@ -1,0 +1,57 @@
+h3 {
+  color: transparent;
+  margin-bottom: 24px;
+  font-size: 16px;
+
+}
+
+h3 span {
+  animation: animate 4s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+
+
+h2 {
+    color: transparent;
+    margin-bottom: 24px;
+    font-size: 46px;
+
+}
+
+h2 span {
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+      color: #fff;
+      filter:hue-rotate(0deg);
+      text-shadow: 0 0 1px #00b3ff,
+      0 0 3px #00b3ff,
+      0 0 7px #00b3ff,
+      0 0 15px #00b3ff,
+      0 0 24px #00b3ff,
+      0 0 37px #00b3ff,
+      0 0 67px #00b3ff,
+      0 0 77px #00b3ff;
+    }
+    30%,70% {
+      color: #fff;
+      filter:hue-rotate(360deg);
+      text-shadow: 0 0 1px #00b3ff,
+      0 0 3px #00b3ff,
+      0 0 7px #00b3ff,
+      0 0 15px #00b3ff,
+      0 0 24px #00b3ff,
+      0 0 37px #00b3ff,
+      0 0 67px #00b3ff,
+      0 0 77px #00b3ff;
+    }
+    100% {
+      color: transparent;
+      box-shadow: none;
+      filter:hue-rotate(0deg);
+    }
+  }
